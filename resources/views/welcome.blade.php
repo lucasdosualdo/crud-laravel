@@ -15,7 +15,7 @@
         <label for="">Name</label>
         <input type ="text" placeholder="type your name" name="candidate_name">
         <br/>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-primary">Register</button>
     </form> 
 </body>
 </html>

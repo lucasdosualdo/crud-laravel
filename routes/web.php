@@ -12,3 +12,5 @@ use App\Http\Controllers\CandidateController;
 
     Route::post('/signup-candidate', [CandidateController::class, 'signUpCandidate']);
     Route::get('/show-candidate/{candidate_id}', [CandidateController::class, 'showCandidate']);
+    Route::get('/update-candidate/{candidate_id}', [CandidateController::class, 'editCandidate']);
+    Route::put('/update-candidate/{candidate_id}', [CandidateController::class, 'updateCandidate']);
