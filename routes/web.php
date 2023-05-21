@@ -14,3 +14,4 @@ use App\Http\Controllers\CandidateController;
     Route::get('/show-candidate/{candidate_id}', [CandidateController::class, 'showCandidate']);
     Route::get('/update-candidate/{candidate_id}', [CandidateController::class, 'editCandidate']);
     Route::put('/update-candidate/{candidate_id}', [CandidateController::class, 'updateCandidate']);
+    Route::get('/delete-candidate/{candidate_id}', [CandidateController::class, 'deleteCandidate']);

@@ -34,4 +34,10 @@ class CandidateController extends Controller
         $candidate->save();
         echo "success to update candidate";
     }
+
+    public function deleteCandidate ($candidate_id) {
+        $candidate = Candidate::findOrFail($candidate_id);
+        $candidate->delete(); 
+        echo "success to delete candidate";
+    }
 }
