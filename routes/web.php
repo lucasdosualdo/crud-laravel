@@ -1,6 +1,10 @@
 <?php
 
+use Illuminate\http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Models\Candidate;
+use App\Http\Controllers\SignUpController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+    Route::get('/', function () {
+        return view('welcome');
+    });
+
+    Route::post('/signup-candidate', [SignUpController::class, 'signUpCandidate']);
